@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/lt_gray</item>
+        <item name="colorPrimaryDark">@color/dk_gray</item>
+        <item name="colorAccent">@color/orangered</item>
+<!--        <item name="snackbarStyle">@style/MySnackbar</item>-->
+    </style>
+
+    <style name="AppThemeLight" parent="Theme.AppCompat.Light" />
+    <style name="AppThemeDark" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="AppTheme.AppBarOverlayDark" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlayLight" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="AppTheme.PopupOverlayLight" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlayDark" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MySnackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:layout_margin">32dp</item>
+    </style>
+</resources>

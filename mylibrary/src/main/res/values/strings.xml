@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Basic App</string>
+    <string name="title_onboarding">Olá %1$s, Bem-vindo</string>
+    <string name="subtitle_onboarding">Minha idade é %1$s</string>
+    <string name="onboarding_title">TITLE - Utilizando Kotlin Parcelize para gerar objetos Parcelable</string>
+    <string name="onboarding_subtitle">subtitle - Para saber mais sobre Parcelize e como o código gerado por ele é performatico, sugiro dar uma lida no material que o Christophe Beyls fez sobre o assunto:</string>
+    <string name="title_1">título 1</string>
+    <string name="title_2">título 2</string>
+    <string name="title_3">título 3</string>
+    <string name="subtitle_1">subtítulo 1</string>
+    <string name="subtitle_2">subtítulo 2</string>
+    <string name="subtitle_3">subtítulo 3</string>
+    <string name="voltar">voltar</string>
+    <string name="proximo">próximo</string>
+    <string name="button_1">external listener</string>
+    <string name="button_2">onboarding</string>
+    <string name="button_3">fragment</string>
+    <string name="button_4">webview</string>
+    <string name="button_5">api mock request</string>
+    <string name="button_6">share image</string>
+    <string name="texto_spannable">toda a vez que chego em casa, a barata da vizinhas está na minha cama</string>
+    <string name="button_7">coordinator layout</string>
+    <string name="long_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta ante sit amet nulla dictum finibus. Maecenas feugiat nibh quis diam consectetur porttitor. Integer eget eros nisl. Nam sed nisl sagittis, scelerisque turpis sit amet, lacinia mi. Nam mattis ipsum nec purus interdum, vitae egestas leo dapibus. Quisque id mi in felis consectetur auctor. Aliquam suscipit mauris a ex tempor sollicitudin. Morbi tortor tortor, accumsan eget felis eu, dapibus fermentum orci. Suspendisse at aliquet enim, vitae pretium dui. Phasellus tempor magna et dui vestibulum, sit amet cursus enim venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pharetra massa massa. Donec lacinia justo id velit sagittis sollicitudin.
+        Curabitur et lobortis eros. Maecenas faucibus tellus vitae nulla laoreet, vitae consequat orci aliquam. Ut pharetra elit ut nisi elementum, sed accumsan arcu aliquam. Suspendisse imperdiet dictum est vel aliquet. In ac eros sit amet orci eleifend interdum. Ut eros libero, ullamcorper in auctor et, sagittis quis metus. Maecenas lacinia convallis purus, tristique congue orci pellentesque quis. Aenean vel nisi ipsum. Morbi et magna nec quam interdum dignissim ac sed urna. Vestibulum metus risus, iaculis sed vulputate id, elementum quis arcu. In hac habitasse platea dictumst. Mauris quis semper magna, sit amet finibus diam. In sed mattis dolor, non molestie augue.
+        In convallis dui sit amet metus bibendum, in pretium nulla tristique. Curabitur mollis tortor aliquam, sollicitudin nibh vulputate, sagittis orci. Mauris ac lacus ullamcorper, maximus ante a, scelerisque ex. Maecenas accumsan sapien quis leo convallis, eget viverra ipsum consequat. Vestibulum at congue dolor, nec ullamcorper velit. Mauris congue fermentum dui non fringilla. Nunc viverra massa mauris, dictum tristique velit gravida ac. Nullam sit amet urna porta, accumsan urna in, porta enim. Nulla tortor orci, vulputate non commodo vel, fringilla id massa. Integer nec nulla nec diam egestas suscipit ac non ex. Suspendisse ullamcorper erat a gravida feugiat. Praesent eleifend eros et porta sollicitudin. Sed pellentesque diam sed faucibus lacinia. Ut interdum nisi in dui pretium, quis ornare massa imperdiet. In scelerisque scelerisque est, nec sagittis sem accumsan quis.
+        Aenean finibus nisi vitae elit porta condimentum. Vestibulum rutrum ut magna nec laoreet. Donec pulvinar turpis ut varius sodales. Mauris aliquet, odio commodo porttitor egestas, velit leo consectetur dui, a bibendum lorem sapien at quam. Etiam nunc nunc, consectetur vitae hendrerit ut, rutrum vel risus. Quisque justo ligula, cursus vel est consectetur, convallis pharetra sapien. Suspendisse congue ligula dolor, in maximus ipsum vehicula ut. Donec augue nunc, bibendum ac luctus hendrerit, iaculis ac nisl. Aenean molestie felis est, at viverra metus mollis ac. Duis auctor mattis lectus, ut ultricies velit iaculis id. Praesent pretium nunc eu finibus blandit. Aenean dictum sed diam tincidunt vulputate.
+        Nullam est nisi, congue eu commodo consequat, egestas non felis. Duis faucibus metus in condimentum rhoncus. Quisque auctor mauris risus, nec hendrerit erat semper vel. Nam sed arcu pretium, laoreet nisl scelerisque, molestie ligula. Morbi nulla orci, lobortis eget volutpat a, iaculis id felis. Curabitur lacus nisi, venenatis eget justo ut, congue pellentesque urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas molestie tellus a elit condimentum luctus.</string>
+    <string name="button_8">activityViewBinding</string>
+    <string name="button_9">koin example</string>
+    <string name="deeplink">deeplink</string>
+    <string name="deeplink_generic">genericapp</string>
+    <string name="deeplink_details">details</string>
+    <string name="deeplink_webview">webview</string>
+    <string name="button_10">data binding</string>
+    <string name="button_11">lottie animation</string>
+    <string name="button_12">external api call</string>
+    <string name="id_external_api">id: %1$d, userId: %2$d</string>
+</resources>

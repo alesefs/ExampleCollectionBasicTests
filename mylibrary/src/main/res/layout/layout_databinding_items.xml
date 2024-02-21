@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="personalInfo"
+            type="com.example.mylibrary.databinding.PersonalInfo" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/castLayoutDatabinding"
+        android:importantForAccessibility="no"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/title_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/pad_16_dp"
+            android:layout_marginTop="@dimen/pad_16_dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@={personalInfo.age}"
+            tools:text="@string/app_name"
+            android:textSize="@dimen/txt_12_sp"
+            android:importantForAccessibility="no"
+            android:textColor="@color/lt_gray"/>
+
+
+        <TextView
+            android:id="@+id/data_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/pad_16_dp"
+            android:layout_marginTop="@dimen/pad_8_dp"
+            app:layout_constraintTop_toBottomOf="@+id/title_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@={personalInfo.name}"
+            tools:text="@string/app_name"
+            android:textSize="@dimen/txt_16_sp"
+            android:importantForAccessibility="no"
+            android:textColor="@color/dk_gray"/>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/pad_16_dp"
+            android:layout_marginTop="@dimen/pad_8_dp"
+            android:paddingBottom="@dimen/pad_8_dp"
+            app:layout_constraintTop_toBottomOf="@+id/data_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            android:importantForAccessibility="no"
+            android:background="@color/lt_gray" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

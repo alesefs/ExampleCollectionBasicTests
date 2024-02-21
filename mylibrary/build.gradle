@@ -1,0 +1,92 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'//dataBinding
+}
+
+apply {
+    from "../version.gradle"
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+            zipAlignEnabled true
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true //remove log dos testes unitários
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+    namespace 'com.example.mylibrary'
+}
+
+//def lifeCycleVersion = "2.5.1"
+//def koinVersion = "3.2.0"
+
+dependencies {
+    implementation "androidx.core:core-ktx:$ktxCore"
+    implementation "androidx.appcompat:appcompat:$appCompat"
+    implementation "com.google.android.material:material:$material"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayout"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$coordinatorLayout"
+    implementation "com.facebook.shimmer:shimmer:$shimmer"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2" //retrofit para acesso a rede
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2" //compressor de json
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines" //coroutines
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleVersion" //viewmodel
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifeCycleVersion" //livedata viewmodel
+    implementation "com.jakewharton.timber:timber:$timber"
+    implementation "androidx.legacy:legacy-support-v4:$supportV4"
+    implementation "com.airbnb.android:lottie:$lottie"
+//    implementation "org.koin:koin-core:$koinVersion"
+    implementation "io.insert-koin:koin-android:$koinVersion"
+    testImplementation "io.insert-koin:koin-test:$koinVersion"
+    testImplementation "junit:junit:$jUnit"
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation "org.mockito.kotlin:mockito-kotlin:$mockitoKotlin"
+    testImplementation "org.mockito:mockito-core:$mockitoCore"
+//    testImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0'
+    testImplementation "androidx.arch.core:core-testing:$coreTesting"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines"
+    testImplementation "io.mockk:mockk:$mockk"
+    androidTestImplementation "androidx.test.ext:junit:$extJunit"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoCore"
+
+//    itemModules.each { implementation (it, excludeModule{exclude})
+//    itemModule = ["repositorio1", "repositorio2"] //fica no includeFile.gradle
+/*    excludeModule= { exclude group: "repositorioX", module: 'm-X'
+                       exclude group: "repositorioY", module: 'm-Y' } //fica no excludeFile.gradle*/
+
+//    annotationProcessor "com.android.databinding:compiler:$dataBindingCompile"  //replace kapt - data binding
+}
